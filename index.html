@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Moment 2 - api med express</title>
+  </head>
+  <body>
+    <h1>Moment 2 - API med JSON - Aous Josef</h1>
+
+    <ul id="list"></ul>
+
+    <div class="form-wrapper">
+      <form id="courseForm">
+        <label for="id">ID:</label>
+        <input type="number" id="id" name="id" required />
+
+        <label for="courseId">Course ID:</label>
+        <input type="text" id="courseId" name="course_id" required />
+
+        <label for="courseName">Course Name:</label>
+        <input type="text" id="courseName" name="course_name" required />
+
+        <label for="coursePeriod">Course Period:</label>
+        <input type="text" id="coursePeriod" name="course_period" required />
+
+        <button type="button" onclick="submitCourse()">Submit</button>
+      </form>
+    </div>
+<script src="app.js"></script>
+  </body>
+</html>
