@@ -1,4 +1,4 @@
-const api = "http://localhost:5000/courses";
+const api = "http://localhost:3000/courses";
 
 async function coursesArray() {
   const response = await fetch(api);

@@ -1,6 +1,7 @@
 const express = require("express");
 const app = express();
 const mongoose = require("mongoose");
+const cors = require('cors');
 
 mongoose.connect("mongodb://localhost/myCV");
 
@@ -15,7 +16,7 @@ app.get("/", function (req, res) {
 
 
 app.use(express.json());
-
+app.use(cors());
 const coursesRouter = require('./routes/courses');
 app.use('/courses', coursesRouter);
 
